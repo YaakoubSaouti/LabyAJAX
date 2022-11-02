@@ -1,0 +1,273 @@
+/*Principal*/
+
+body{
+	background: linear-gradient(90deg,#0F2027 0%, #203A43 35%, #2C5364 100%);
+}
+
+h1{
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2em;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+h2{
+	margin:10px auto auto 15px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px;
+	color: #0059B3;
+	font-weight: 700;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+#main_div{
+	position: relative;
+	margin :auto;
+	height: 400px;
+	width: 840px;
+}
+
+.sous_div{
+	display: none;
+}
+
+/*Connexion et Inscription*/
+
+.texte{
+	position: absolute;
+	border-radius: 15px;
+	background-color: white;
+	left:32%;
+	height: 100%;
+	width:36%;
+}
+#register_div{
+	height: 115%;
+}
+
+.titre{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin: 10px auto auto 15px;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+.champs_container{
+	margin: 10px auto auto auto;
+	border-radius: 15px;
+	background-color: #0080FF;
+	height: 50px;
+	width: 90%;
+}
+
+.champs{ 
+	width: 80%;
+	margin-left: 5%;
+	padding:4px; 
+	font-size:12px; 
+	border-width:2px; 
+	border-radius:5px; 
+	border-style:solid; 
+	border-color:#0059B3; 
+	background-color:#f5f5f5; 
+	color:#1f1f1f;
+	font-family:sans-serif;  
+} 
+
+.message{
+	background-color: rgb(255,232,232);
+	border: 1px solid red;
+	color: red;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px 20px;
+	max-width: 240px;
+	margin: 8px auto auto auto;
+}
+
+#message_register{
+	display: none;
+}
+
+#message_login{
+	display: none;
+}
+
+.ok_container{
+	margin: 10px auto auto auto;
+	height: 30px;
+	width: 30px;
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #0059B3;
+	background-color: #0080FF;
+}
+
+.ok{
+	height:100%;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.retour{
+	position: absolute;
+	background-color: rgba(0,0,0,0);
+	color: grey;
+	bottom: 2%;
+	left: 5%;
+	border-style: none;
+}
+
+.retour:hover {
+  color: black;
+}
+
+/*Game*/
+
+#game_div{
+	position: relative;
+	width: 840px;
+	height:400px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #0059B3;
+}
+
+#game_display{
+	position: absolute;
+	left : 0px;
+	height : 100%;
+	width : 640px;
+}
+
+#interface{
+	position: absolute;
+	right : 0px;
+	height : 100%;
+	width: 200px;
+}
+
+#logout_container{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	height: 2em;
+	width: 2em;
+	border-bottom-left-radius: 4px;
+	border-style: none none solid solid;
+	border-width: 2px;
+	border-color: #0059B3;
+	background-color: #0080FF;
+}
+#coord_div{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#coord_span{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	font-weight: 700;
+	font-style: normal;
+}
+
+#logout{
+	height:100%;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#boussole{
+	position: relative;
+	background-color: #0080FF;
+	border-style: none none solid solid;
+	border-color: #0059B3;
+	border-width: 3px;
+	height: 100px;
+}
+
+#img_compass{
+	position: absolute;
+	bottom: 0px;
+	left: 50px;
+	height: 47px;
+}
+
+#commande{
+	border-style: none none none solid;
+	border-color: #0059B3;
+	position: relative;
+	background-color: #0080FF;
+	height: 100px;
+}
+
+#chat{
+	border-style: solid none none solid;
+	border-color: #0059B3;
+	border-width: 3px;
+	background-color: #0080FF;
+	height: 195px;
+}
+
+#espace_message{
+	background-color: white;
+	height: 150px;
+}
+
+#chat_message{
+	position: absolute;
+	bottom: 0px;
+	left: 3px;
+	width: 70%;
+	height: 16px;
+}
+#players{
+	margin: 3px auto auto auto;
+	width:98%;
+}
+
+#btn_chat{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 24%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-style: normal;
+	font-variant: small-caps;
+	border-radius: 2px;
+	background-color: #0080FF;
+}
+
+.img_commande{
+	display:inline-block;
+	margin-right: 12.5px;
+	height: 43px;
+	width:57px;
+	cursor: pointer;
+}
+
+.comright{
+	margin-right: 0px;
+}
+
+.comtop{
+	margin-bottom: 13px;
+}
+
+#espace_message{
+	overflow:auto;
+}
+
+
+
+

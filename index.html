@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="Fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel ="stylesheet" href="CSS/style.css">
+		<title>Jeux de Labyrinthe</title>
+		<script src="JS/common.js"></script>
+		<script src="JS/script.js" defer></script>
+	</head>
+	<body>
+		<h1>Labyrinthe</h1>
+		<!--Division principale--> 
+		<div id="main_div">
+			<!--Division de connexion--> 
+			<div id="login_div" class="sous_div texte">
+				<h2>Connexion</h2>
+				<div class="champs_container">
+					<span class="titre">Pseudo</span><br>
+					<input class="champs cl" type="text" value="" id="login_ps">
+				</div>
+				<div class="champs_container">
+					<span class="titre">Mot de passe</span><br>
+					<input class="champs cl" type="password" id="login_mdp">
+				</div>
+				<div class="ok_container">
+					<input type="image" class="ok" id="ok_login" alt="login" src="Image/ok.png">
+				</div>
+				<ul class="message" id="message_login"></ul>
+				<button id="btn_register" class="retour">S'inscrire</button>
+			</div>
+			<!--Division d'inscription--> 
+			<div id="register_div" class="sous_div texte">
+				<h2>Inscription</h2>
+				<div class="champs_container">
+					<span class="titre">Pseudo</span><br>
+					<input class="champs cr" type="text" value="" id="register_ps">
+				</div>
+				<div class="champs_container">
+					<span class="titre">Mot de passe</span><br>
+					<input class="champs cr" type="password" id="register_mdp1">
+				</div>
+				<div class="champs_container">
+					<span class="titre">Confirmez le mot de passe</span><br>
+					<input class="champs cr" type="password" id="register_mdp2">
+				</div>
+				<div class="champs_container">
+					<span class="titre">E-mail</span><br>
+					<input class="champs cr" type="email" id="register_email">
+				</div>
+				<div class="ok_container">
+					<input type="image" class="ok" id="ok_register" alt="login" src="Image/ok.png">
+				</div>
+				<ul id="message_register"class="message"></ul>
+				<button id="btn_login" class="retour">Se connecter</button>
+			</div>
+			<!--Division de jeux--> 
+			<div id="game_div" class="sous_div">
+				<div id="game_display">
+					<canvas id="game_canvas" height="400" width="640"></canvas>
+				</div>
+				<div id="interface">
+					<div id="boussole">
+						<div id="img_compass"></div>
+						<div id="logout_container">
+							<input type="image" id="logout" alt="logout" src="Image/logout.png">
+						</div>
+						<div id="coord_div">
+							<span id="coord_span"></span>
+						</div>
+					</div>
+					<div id="commande">
+					</div>
+					<div id="chat">
+						<div id="espace_message">
+							Voici le début de vos conversasion:<br><br>
+						</div>
+						<select id="players"></select>
+						<input type="text" value="" id="chat_message">
+						<button id="btn_chat">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
